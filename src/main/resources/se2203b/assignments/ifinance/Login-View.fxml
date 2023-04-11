@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="207.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.assignments.ifinance.LoginController">
+   <children>
+          <VBox prefHeight="207.0" prefWidth="287.0">
+              <children>
+                  <GridPane vgap="10.0">
+                      <children>
+                          <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                          <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                          <TextField fx:id="user" onAction="#authorize" onMouseClicked="#clearErrorMsg" prefHeight="26.0" prefWidth="198.0" promptText="Enter your username " GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                          <PasswordField fx:id="password" onAction="#authorize" onMouseClicked="#clearErrorMsg" promptText="Enter your password"
+                                         GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                      </children>
+                      <columnConstraints>
+                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="63.599999999999994" />
+                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="207.6" />
+                      </columnConstraints>
+                      <rowConstraints>
+                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      </rowConstraints>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+                  </GridPane>
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="287.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="errorMsg" alignment="CENTER" prefHeight="18.0" prefWidth="270.0" textAlignment="CENTER" textFill="#fa0101" wrapText="true" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#cancel" prefHeight="26.0" prefWidth="60.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#authorize" prefHeight="26.0" prefWidth="60.0" text="OK" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+              </children>
+          </VBox>
+   </children>
+</AnchorPane>
