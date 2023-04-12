@@ -21,3 +21,12 @@ user to add, update, or delete a custom sub-categories (called Groups). This inc
 groupID, groupName, groupElement, i.e., Assets, Liabilities, Income, Expenses, and 
 groupParent. Each group can be decomposed to further level of sub-groups (the 
 groupParent field is responsible to maintain the parent-children link).
+
+![alt text](./img/homepage.png "HomePage")
+![alt text](./img/login.png "Login")
+![alt text](./img/managegroups.png "Manage Groups")
+![alt text](./img/changepass.png "Change Password")
+![alt text](./img/createuser.png "Create User")
+![alt text](./img/modifyuser.png "Modify User")
+![alt text](./img/deleteuser.png "Delete User")
+
